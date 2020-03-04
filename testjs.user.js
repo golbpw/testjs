@@ -5,10 +5,10 @@
 // @author       golbpw
 // @licence      MIT
 // @include      *
-// @version      1.0.0
+// @version      1.0.1
 // ==/UserScript==
 
 
 (()=>{
-	console.log('github import test');
+	console.log('github hook test');
 })();
