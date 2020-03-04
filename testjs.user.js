@@ -10,5 +10,5 @@
 
 
 (()=>{
-	console.log('test');
+	console.log('github import test');
 })();
