@@ -1,1 +1,1 @@
-# [GitHub](https://github.com/golbpw/testjs)
+# ![GitHub](https://exhentai.org/favicon.ico)
