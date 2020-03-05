@@ -3,7 +3,7 @@
 // @namespace    http://golbpw.wpblog.jp
 // @description  webhook test
 // @author       golbpw
-// @licence      MIT
+// @license      MIT
 // @include      *
 // @version      1.0.1
 // ==/UserScript==
