@@ -6,9 +6,9 @@
 // @license      MIT
 // @grant        GM_getResourceText
 // @grant        GM.getResourceUrl
-// @resource     data https://github.com/golbpw/testjs/raw/master/data.json
+// @resource     data https://github.com/golbpw/testjs/raw/master/data.json#1.0.5
 // @include      *
-// @version      1.0.4
+// @version      1.0.5
 // ==/UserScript==
 
 
