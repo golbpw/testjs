@@ -10,9 +10,11 @@
 // @grant        GM.getResourceUrl
 // @resource     data https://github.com/golbpw/testjs/raw/master/data.json?latest
 // @include      *
-// @version      1.0.18
+// @version      1.0.19
 // ==/UserScript==
 
+
+const b64 = str => atob(str.replace(/^.+base64,|=+$/, ''));
 
 (async () => {
 	console.log('TestJs: github port test');
@@ -21,5 +23,5 @@
 	console.info('getResourceText', myData);
 
 	const myDataUrl = await GM.getResourceUrl('data');
-	console.info('getResourceUrl', myDataUrl);
+	console.info('getResourceUrl', b64(myDataUrl));
 })();
