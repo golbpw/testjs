@@ -15,9 +15,9 @@
 (async () => {
 	console.log('TestJs: github port test');
 
-	const myData = JSON.parse(GM_getResourceText(data));
+	const myData = JSON.parse(GM_getResourceText('data'));
 	console.info('getResourceText', myData);
 
-	const myDataUrl = await GM.getResourceUrl(data);
+	const myDataUrl = await GM.getResourceUrl('data');
 	console.info('getResourceUrl', myDataUrl);
 })();
