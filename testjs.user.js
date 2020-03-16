@@ -10,7 +10,7 @@
 // @grant        GM.getResourceUrl
 // @resource     data https://github.com/golbpw/testjs/raw/master/data.json?latest
 // @include      *
-// @version      1.0.13
+// @version      1.0.14
 // ==/UserScript==
 
 
