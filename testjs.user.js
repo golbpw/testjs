@@ -8,9 +8,9 @@
 // @supportURL   https://gist.github.com/golbpw
 // @grant        GM_getResourceText
 // @grant        GM.getResourceUrl
-// @resource     data https://github.com/golbpw/testjs/raw/master/data.json#1.0.5
+// @resource     data https://github.com/golbpw/testjs/raw/master/data.json
 // @include      *
-// @version      1.0.6
+// @version      1.0.7
 // ==/UserScript==
 
 
