@@ -4,13 +4,11 @@
 // @description  webhook test
 // @author       golbpw
 // @license      MIT
-// @homepageURL  https://github.com/golbpw
-// @supportURL   https://gist.github.com/golbpw
 // @grant        GM_getResourceText
 // @grant        GM.getResourceUrl
 // @resource     data https://github.com/golbpw/testjs/raw/master/data.json
 // @include      *
-// @version      1.0.24
+// @version      1.0.25
 // ==/UserScript==
 
 
