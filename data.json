@@ -1,5 +1,7 @@
 {
 	"name": "golbpw",
 	"blog": "http://golbpw.wpblog.jp/",
-	"data": 3.14
+	"data": {
+		"str": "文字列"
+	}
 }
