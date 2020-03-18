@@ -8,7 +8,7 @@
 // @grant        GM.getResourceUrl
 // @resource     data https://github.com/golbpw/testjs/raw/master/data.json
 // @include      *
-// @version      1.0.26
+// @version      1.0.27
 // ==/UserScript==
 
 
@@ -21,5 +21,6 @@ const b64 = str => atob(str.replace(/^.+base64,|=+$/, ''));
 	console.info('getResourceText:\n', myData);
 
 	const myDataUrl = b64(await GM.getResourceUrl('data'));
-	console.info('getResourceUrl:\n', myDataUrl);
+	unsafeWindow.testjs = myDataUrl;
+	// console.info('getResourceUrl:\n', myDataUrl);
 })();
