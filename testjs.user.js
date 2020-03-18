@@ -3,12 +3,13 @@
 // @namespace    http://golbpw.wpblog.jp
 // @description  webhook test
 // @author       golbpw
-// @license      MIT
+// @license      CC BY-NC-ND 4.0
 // @grant        GM_getResourceText
 // @grant        GM.getResourceUrl
-// @resource     data https://github.com/golbpw/testjs/raw/master/data.json
+// @resource     data https://golbpw.github.io/testjs/data.json
+// @resource     text https://golbpw.github.io/testjs/utf8.txt
 // @include      *
-// @version      1.0.27
+// @version      1.0.28
 // ==/UserScript==
 
 
