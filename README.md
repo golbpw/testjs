@@ -1,1 +1,1 @@
-# [![GitHub](https://exhentai.org/favicon.ico)](http://golbpw.wpblog.jp/)
+# [![](/fluidicon.png)](http://golbpw.wpblog.jp/)
