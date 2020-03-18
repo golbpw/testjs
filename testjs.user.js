@@ -4,6 +4,8 @@
 // @description  webhook test
 // @author       golbpw
 // @license      CC BY-NC-ND 4.0
+// @homepageURL  https://github.com/golbpw
+// @supportURL   https://github.com/golbpw/testjs/issues
 // @grant        GM_getResourceText
 // @grant        GM.getResourceUrl
 // @resource     data https://golbpw.github.io/testjs/data.json
