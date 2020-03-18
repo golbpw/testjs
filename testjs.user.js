@@ -19,9 +19,11 @@ const b64 = str => atob(str.replace(/^.+base64,|=+$/, ''));
 	console.log('TestJs: github port test');
 
 	const myData = JSON.parse(GM_getResourceText('data'));
-	console.info('getResourceText:\n', myData);
+	console.info('getResourceText_json:\n', myData);
 
-	const myDataUrl = b64(await GM.getResourceUrl('data'));
-	unsafeWindow.testjs = myDataUrl;
+	// const myDataUrl = b64(await GM.getResourceUrl('data'));
 	// console.info('getResourceUrl:\n', myDataUrl);
+
+	const myUTF8 = b64(await GM.getResourceUrl('text'));
+	console.info('getResourceUrl_text:\n', myUTF8);
 })();
