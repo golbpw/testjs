@@ -12,7 +12,7 @@
 // @resource     icon https://golbpw.github.io/testjs/icon.png
 // @resource     text https://golbpw.github.io/testjs/utf8.txt
 // @include      *
-// @version      1.0.34
+// @version      1.0.35
 // ==/UserScript==
 
 
@@ -30,5 +30,5 @@ const b64 = str => decodeURIComponent(escape(atob(str.replace(/^.+base64,|=+$/g,
 	const myUTF8 = b64(await GM.getResourceUrl('text'));
 	console.info('getResourceUrl_text:\n', myUTF8);
 
-	console.log('icon.png:\n', GM.getResourceUrl('icon'));
+	console.log('icon.png:\n', await GM.getResourceUrl('icon'));
 })();
