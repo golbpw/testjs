@@ -11,11 +11,11 @@
 // @resource     data https://golbpw.github.io/testjs/data.json
 // @resource     text https://golbpw.github.io/testjs/utf8.txt
 // @include      *
-// @version      1.0.28
+// @version      1.0.29
 // ==/UserScript==
 
 
-const b64 = str => atob(str.replace(/^.+base64,|=+$/, ''));
+const b64 = str => new Blob([atob(str.replace(/^.+base64,|=+$/, ''))], {type: 'text/plain'}).text();
 
 (async () => {
 	console.log('TestJs: github port test');
