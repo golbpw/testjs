@@ -11,11 +11,11 @@
 // @resource     data https://golbpw.github.io/testjs/data.json
 // @resource     text https://golbpw.github.io/testjs/utf8.txt
 // @include      *
-// @version      1.0.31
+// @version      1.0.32
 // ==/UserScript==
 
 
-const b64 = str => new Response(new Blob([atob(str.replace(/^.+base64,|=+$/g, ''))], {type: 'text/plain'})).text();
+const b64 = str => decodeURIComponent(escape(atob(str.replace(/^.+base64,|=+$/g, ''))));
 
 (async () => {
 	console.log('TestJs: github port test');
@@ -26,6 +26,6 @@ const b64 = str => new Response(new Blob([atob(str.replace(/^.+base64,|=+$/g, ''
 	// const myDataUrl = b64(await GM.getResourceUrl('data'));
 	// console.info('getResourceUrl:\n', myDataUrl);
 
-	const myUTF8 = await GM.getResourceUrl('text');
+	const myUTF8 = b64(await GM.getResourceUrl('text'));
 	console.info('getResourceUrl_text:\n', myUTF8);
 })();
