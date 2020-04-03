@@ -1,7 +1,8 @@
 {
 	"name": "golbpw",
 	"blog": "http://golbpw.wpblog.jp/",
-	"data": {
-		"str": "文字列"
+	"meta": {
+		"str": "文字列",
+		"num": 123.45
 	}
 }
