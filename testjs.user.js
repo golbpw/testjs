@@ -12,7 +12,7 @@
 // @resource     icon https://golbpw.github.io/testjs/icon.png
 // @resource     text https://golbpw.github.io/testjs/utf8.txt
 // @include      *
-// @version      1.0.35
+// @version      1.0.36
 // ==/UserScript==
 
 
@@ -22,13 +22,13 @@ const b64 = str => decodeURIComponent(escape(atob(str.replace(/^.+base64,|=+$/g,
 	console.log('TestJs: github port test');
 
 	const myData = JSON.parse(GM_getResourceText('data'));
-	console.info('getResourceText_json:\n', myData);
+//	console.info('getResourceText_json:\n', myData);
 
-	// const myDataUrl = b64(await GM.getResourceUrl('data'));
-	// console.info('getResourceUrl:\n', myDataUrl);
+	const myIcon = await GM.getResourceUrl('icon');
+//	console.log('icon.png:\n', myIcon);
 
-	const myUTF8 = b64(await GM.getResourceUrl('text'));
-	console.info('getResourceUrl_text:\n', myUTF8);
+	const myText = b64(await GM.getResourceUrl('text'));
+//	console.info('getResourceUrl_text:\n', myText);
 
-	console.log('icon.png:\n', await GM.getResourceUrl('icon'));
+	unsafeWindow._testjs_ = {data: myData, icon: myIcon, text: myText};
 })();
