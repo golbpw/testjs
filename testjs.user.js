@@ -13,7 +13,7 @@
 // @resource     text https://golbpw.github.io/testjs/utf8.txt
 // @include      *
 // @noframes
-// @version      1.0.37
+// @version      1.0.38
 // ==/UserScript==
 
 
@@ -30,5 +30,5 @@ const b64 = str => decodeURIComponent(escape(atob(str.replace(/^.+base64,|=+$/g,
 //	console.info('getResourceUrl_text:\n', myText);
 
 	unsafeWindow._testjs_ = {data: myData, icon: myIcon, text: myText};
-	console.log('TestJs: github port test', _testjs_);
+//	console.log('TestJs: github port test', _testjs_);
 })();
