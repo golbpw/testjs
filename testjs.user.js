@@ -13,7 +13,7 @@
 // @resource     text https://golbpw.github.io/testjs/utf8.txt
 // @include      *
 // @noframes
-// @version      1.0.38
+// @version      1.0.40
 // ==/UserScript==
 
 
