@@ -3,6 +3,6 @@
 	"blog": "http://golbpw.wpblog.jp/",
 	"meta": {
 		"str": "文字列",
-		"num": 123.45
+		"ver": "1.0.40"
 	}
 }
